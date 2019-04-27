@@ -25,6 +25,8 @@ public class Main1 {
                     break;
                 }
             } catch (InputMismatchException e) {
+                System.out.println("Podaj liczbe!");
+                e.printStackTrace();
 
             }
 

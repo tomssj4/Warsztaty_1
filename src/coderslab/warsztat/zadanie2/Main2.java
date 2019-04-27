@@ -20,6 +20,8 @@ public class Main2 {
                     System.out.println("Podales zla lub ta sama liczbe.");
                 }
             } catch (InputMismatchException e) {
+                System.out.println("Podaj liczbe!");
+                e.printStackTrace();
             }
 
         } while (index < 6) ;

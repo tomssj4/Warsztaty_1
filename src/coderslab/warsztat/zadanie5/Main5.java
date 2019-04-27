@@ -13,9 +13,7 @@ public class Main5 {
 
     public static void main(String[] args) {
         Connection connect = Jsoup.connect("http://www.onet.pl/");
-        try (
-                BufferedWriter writer = new BufferedWriter(new FileWriter("popular_words.txt"))
-        ) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter("popular_words.txt"))) {
             Document document = connect.get();
             Elements links = document.select("span.title");
             for (Element elem : links) {
@@ -27,8 +25,7 @@ public class Main5 {
                 }
             }
             writer.close();
-        } catch (
-                IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
         filteredWords();
