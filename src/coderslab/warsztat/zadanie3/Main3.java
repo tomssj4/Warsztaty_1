@@ -13,7 +13,7 @@ public class Main3 {
         Scanner scan = new Scanner(System.in);
         int index = 0;
         do {
-            guess =((max-min)/2) + min;
+            guess = ((max - min) / 2) + min;
             System.out.println("Zgaduje: " + guess);
             System.out.println("Zgadlem?");
             String answer = scan.nextLine();
@@ -23,9 +23,9 @@ public class Main3 {
                 if (answer1.equals(no)) {
                     System.out.println("Za malo?");
                     String answer2 = scan.nextLine();
-                    if (answer2.equals(no)){
+                    if (answer2.equals(no)) {
                         System.out.println("Nie oszukuj!");
-                    } else if (answer2.equals(yes)){
+                    } else if (answer2.equals(yes)) {
                         min = guess;
                         index += 1;
                     }
